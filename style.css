@@ -251,3 +251,106 @@ body {
   background-image: linear-gradient(to right, #267ebb 0%, #3fa3e8 100%);
   border: 1px solid #1c71a9;
 }
+
+/* =============== */
+/* MEDIA QUERIES */
+/* =============== */
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 9px; /* 1rem = 9px */
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .signin {
+    flex-direction: column;
+    width: 70rem;
+    position: relative;
+    margin: 4rem auto;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    height: auto;
+  }
+
+  .signin__box:first-child,
+  .signin__box:last-child {
+    width: 100%;
+  }
+
+  .signin__box:first-child {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 7px;
+    padding: 4rem 6rem;
+  }
+
+  .signin__box:last-child {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 7px;
+    padding: 8rem 6rem;
+  }
+
+  .signin__text-box {
+    position: relative;
+    transform: translate(0, 0);
+    top: 0;
+    margin: 8rem 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 8px; /* 1rem = 8px */
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .signin {
+    width: 100%;
+  }
+
+  .signin__box:first-child {
+    padding: 3em 4rem;
+  }
+
+  .signin__box:last-child {
+    padding: 7rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    padding: 2.5rem;
+  }
+
+  .signin__text-box {
+    margin: 6rem 0;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  body {
+    padding: 1.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.6rem;
+  }
+
+  .signin__box:first-child {
+    padding: 2em 3rem;
+  }
+
+  .signin__box:last-child {
+    padding: 6rem 3rem;
+  }
+
+  .signin__text-box {
+    margin: 4rem 0;
+  }
+}
