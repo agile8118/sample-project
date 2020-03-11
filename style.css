@@ -1,3 +1,7 @@
+/* =============== */
+/* BASES */
+/* =============== */
+
 *,
 *::after,
 *::before {
@@ -12,12 +16,238 @@ html {
 
 body {
   font-display: fallback;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Lato", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #555;
   position: relative;
   background: #fed6d6;
-  height: 100vh;
-  padding: 2rem 0;
+  min-height: 100vh;
+  padding: 4rem;
+}
+
+/* =============== */
+/* UTILITIES */
+/* =============== */
+
+.u-margin-bottom-3 {
+  margin-bottom: 3rem;
+}
+
+/* =============== */
+/* SIGNLES */
+/* =============== */
+
+/* Connect with social media text */
+.a-1 {
+  color: #b6b7b8;
+  text-align: center;
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+/* Icons inside social media buttons */
+.a-2 {
+  height: 2.2rem;
+  width: 2.2rem;
+  margin-right: 1.8rem;
+}
+
+/* Arrow icon inside sign in form submit button */
+.a-3 {
+  position: absolute;
+  font-size: 4.5rem;
+  font-weight: 100;
+  top: 40%;
+  right: 1.8rem;
+  transform: translateY(-50%);
+}
+
+/* =============== */
+/* TYPOGRAPHY */
+/* =============== */
+
+.heading-secondary {
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  font-size: 4rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+/* =============== */
+/* SIGN IN */
+/* =============== */
+
+.signin {
+  display: flex;
+  width: 94rem;
+  height: 63rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+}
+
+.signin__box:first-child {
+  width: 53%;
+  font-size: 2.2rem;
+  color: #f1fcfe;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 4.3rem 5.5rem 2.4rem 6.7rem;
+  background-color: #fb8382;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.signin__box:last-child {
+  width: 47%;
+  font-size: 1.4rem;
+  position: relative;
+  padding: 8.2rem 5.5rem;
+  background-color: #feffff;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.signin__logo {
+  display: flex;
+  align-items: center;
+}
+
+.signin__logo div {
+  border-radius: 500px;
+  border: 0.5rem solid #fff;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin-right: 2.3rem;
+}
+
+.signin__logo span {
+  font-weight: 300;
+}
+
+.signin__icon {
+  position: absolute;
+  top: 2.6rem;
+  right: 3.2rem;
+  width: 5.2rem;
+}
+
+.signin__text-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.signin__text-box h2 {
+  margin-bottom: 0.6rem;
+}
+
+.signin__text-box span {
+  color: #f3fef8;
+  font-weight: 300;
+}
+
+.singin__footnote {
+  display: flex;
+  align-items: center;
+}
+
+.singin__footnote div {
+  width: 100%;
+  height: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  background-color: #fff;
+  margin-right: 2.1rem;
+}
+
+/* =============== */
+/* FORMS */
+/* =============== */
+
+.form__group:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.form__input {
+  width: 100%;
+  color: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: #eef0f1;
+  border: 1px solid #eeeff0;
+  border-radius: 500px;
+  padding: 1rem 3rem;
+  transition: all 0.2s;
+}
+
+.form__input:focus {
+  outline: none;
+  border: 1px solid #e1e2e3;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* =============== */
+/* BUTTONS */
+/* =============== */
+
+/* 
+  Every button whether it's a button tag or an a tag, should have the btn class,
+  in addition to that one we need to provide another class(es) to specify more attributes
+*/
+
+.btn {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  line-height: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 500px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:focus,
+.btn:hover {
+  outline: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn--full {
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #fd807e 0%, #f59a97 100%);
+  border: 1px solid #e77573;
+}
+
+.btn--twitter {
+  display: flex;
+  background-image: linear-gradient(to right, #38a9d2 0%, #62ddfb 100%);
+  border: 1px solid #249ec5;
+}
+
+.btn--facebook {
+  display: flex;
+  background-image: linear-gradient(to right, #267ebb 0%, #3fa3e8 100%);
+  border: 1px solid #1c71a9;
 }
